@@ -10,7 +10,7 @@ BullBoard.setQueues(Queue.queues.map(queue => queue.bull));
 
 app.use(express.json())
 
-app.use('/admin/queues', Bull.UI);
+app.use('/admin/queues', BullBoard.UI);
 
 app.use(routes);
 
